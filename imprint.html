@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprint - Minimal Browser</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
-        h1 { color: #1E88E5; }
+        :root { --bg: #ffffff; --text: #333333; --accent: #1E88E5; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #e0e0e0; --accent: #4dabf7; } }
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 25px; max-width: 800px; margin: auto; background: var(--bg); color: var(--text); }
+        h1 { color: var(--accent); }
+        .box { padding: 20px; border: 1px solid var(--accent); border-radius: 12px; }
     </style>
 </head>
 <body>
     <h1>Impressum</h1>
-    <p>Angaben gemäß § 5 TMG:</p>
-    
-    <p>
-        <strong>Anbieter:</strong><br>
-        name<br>
-        adresse<br>
-        postleitzahl<br>
-        land
-    </p>
-
-    <p>
-        <strong>Kontakt:</strong><br>
-        E-Mail: email
-    </p>
-
-    <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
-    name, adresse</p>
+    <div class="box">
+        <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+        <p>
+            [DEIN VOR- UND NACHNAME]<br>
+            [DEINE STRASSE / ODER IMPRESSUMS-SERVICE]<br>
+            [PLZ UND STADT]<br>
+            Deutschland
+        </p>
+        <p><strong>Kontakt:</strong><br>
+            E-Mail: [DEINE E-MAIL HIER]
+        </p>
+    </div>
 </body>
 </html>
