@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Minimal Browser</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
-        h1 { color: #1E88E5; }
-        .section { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        :root { --bg: #ffffff; --text: #333333; --accent: #1E88E5; --sub: #666666; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #e0e0e0; --accent: #4dabf7; --sub: #aaaaaa; } }
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 25px; max-width: 800px; margin: auto; background: var(--bg); color: --text; }
+        h1, h2 { color: var(--accent); }
+        p, li { color: var(--text); }
+        .section { border-bottom: 1px solid var(--sub); padding-bottom: 15px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p>Last Updated: 2026</p>
+    <p>Last Updated: May 2026</p>
 
     <div class="section">
-        <h2>1. Data Minimization</h2>
-        <p>Minimal Browser is built with a "Privacy First" approach. We do not collect, store, or transmit any of your personal data, browsing history, or search queries to our servers.</p>
+        <h2>1. No Data Collection</h2>
+        <p>Minimal Browser is a purely local tool. We do not collect, store, or transmit any personal data, search history, or cookies to external servers.</p>
     </div>
 
     <div class="section">
-        <h2>2. Local Storage</h2>
-        <p>All your browsing data (History, Bookmarks, Passwords) is stored <strong>locally on your device</strong>. This data never leaves your phone unless you manually export it.</p>
+        <h2>2. Local Security</h2>
+        <p>All your browsing data (history, bookmarks) is stored exclusively on your device. Clearing the app cache or history permanently deletes this data from your phone.</p>
     </div>
 
     <div class="section">
-        <h2>3. Third-Party Websites</h2>
-        <p>When you visit websites, they may collect data according to their own privacy policies. Minimal Browser includes a built-in Ad-Blocker to reduce third-party tracking.</p>
+        <h2>3. Free of Charge</h2>
+        <p>This app is completely free. It does not contain any advertisements, tracking tools, or in-app purchases.</p>
     </div>
 
     <div class="section">
-        <h2>4. Permissions</h2>
-        <p>The app only requests minimal permissions: Internet access (to browse) and Storage access (only if you choose to download files).</p>
-    </div>
-
-    <div class="section">
-        <h2>5. Contact</h2>
-        <p>For questions, contact: <strong>[DEINE E-MAIL HIER]</strong></p>
+        <h2>4. Contact</h2>
+        <p>For any privacy-related questions, contact: <strong>[DEINE E-MAIL HIER]</strong></p>
     </div>
 </body>
 </html>
