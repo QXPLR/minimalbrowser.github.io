@@ -1,1 +1,1 @@
-# minimalbrowser.github.io
+# Minimal Browser
