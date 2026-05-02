@@ -5,23 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licenses - Minimal Browser</title>
     <style>
-        :root { --bg: #ffffff; --text: #333333; --accent: #1E88E5; --code-bg: #f4f4f4; }
-        @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #e0e0e0; --accent: #4dabf7; --code-bg: #1e1e1e; } }
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 25px; max-width: 800px; margin: auto; background: var(--bg); color: var(--text); }
-        h1, h3 { color: var(--accent); }
-        pre { background: var(--code-bg); padding: 15px; border-radius: 8px; font-size: 12px; overflow-x: auto; color: var(--text); border: 1px solid var(--accent); }
+        /* HELL-MODUS (Standard) */
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #1E88E5;
+            --code-bg: #f5f5f5;
+            --border: #dddddd;
+        }
+
+        /* DUNKEL-MODUS (Wird automatisch aktiv) */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text: #ffffff; /* Reinweiß für besten Kontrast */
+                --accent: #64b5f6;
+                --code-bg: #1a1a1a;
+                --border: #444444;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--bg);
+            color: var(--text); /* Fix: var() hinzugefügt */
+        }
+
+        h1, h2, h3 {
+            color: var(--accent);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 30px 0;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 13px;
+            overflow-x: auto;
+            color: var(--text);
+            border: 1px solid var(--border);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
     <h1>Open Source Licenses</h1>
-    <p>This browser is built with love and open-source software:</p>
+    <p>Minimal Browser is built using the following open-source libraries:</p>
 
-    <h3>Libraries</h3>
+    <h3>Core Libraries</h3>
     <ul>
-        <li>AndroidX Webkit (Apache 2.0)</li>
-        <li>Jetpack Compose (Apache 2.0)</li>
-        <li>Material Design 3 (Apache 2.0)</li>
-        <li>Kotlin Coroutines (Apache 2.0)</li>
+        <li><strong>AndroidX Webkit:</strong> Apache License 2.0</li>
+        <li><strong>Jetpack Compose & Material 3:</strong> Apache License 2.0</li>
+        <li><strong>Kotlin Coroutines:</strong> Apache License 2.0</li>
+        <li><strong>AndroidX Security & Biometrics:</strong> Apache License 2.0</li>
     </ul>
 
     <hr>
@@ -36,6 +91,8 @@ You may obtain a copy of the License at
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
     </pre>
 </body>
 </html>
